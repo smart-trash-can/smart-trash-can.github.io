@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی محصول - سطل زباله هوشمند</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* پس‌زمینه تیره */
+            color: white; /* رنگ متن سفید */
+            text-align: right; /* راست‌چین کردن متن */
+            direction: rtl; /* تعیین جهت متن */
+            opacity: 0; /* پنهان کردن محتوا */
+            transition: opacity 1s ease-in; /* انیمیشن تغییر شفافیت */
+        }
+        body.loaded {
+            opacity: 1; /* نمایان کردن محتوا */
+        }
+        header {
+            background: linear-gradient(135deg, #007BFF, #0056b3); /* نوار بالا با حالت امواج */
+            color: white; /* رنگ متن سفید */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+       .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #2c2c2c; /* پس‌زمینه تیره برای محتوا */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px; /* گرد کردن گوشه‌ها */
+        }
+       .features {
+            display: flex; /* استفاده از flexbox برای چینش افقی */
+            flex-direction: column; /* چینش عمودی */
+        }
+       .features-text {
+            flex: 1; /* فضای بیشتری برای متن */
+            margin-left: 20px; /* فاصله از تصویر (که حذف شده) */
+        }
+        h1, h2 {
+            color: white; /* رنگ سفید برای تیتر اصلی */
+            margin: 10px 0; /* فاصله بین عنوان‌ها */
+        }
+        p {
+            color: #e0e0e0; /* رنگ خاکستری روشن برای متن */
+            margin: 10px 0; /* فاصله بین پاراگراف‌ها */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #3c3c3c; /* رنگ پس‌زمینه تیره برای ویژگی‌ها */
+            margin: 5px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #007BFF; /* رنگ سمت چپ با رنگ آبی */
+            text-align: right; /* راست‌چین کردن متن ویژگی‌ها */
+            color: white; /* رنگ متن ویژگی‌ها سفید */
+        }
+       .description {
+            margin-top: 20px; /* فاصله از بخش ویژگی‌ها */
+            font-size: 16px; /* اندازه فونت توضیحات بزرگ‌تر */
+            color: #e0e0e0; /* رنگ خاکستری روشن برای متن توضیحات */
+            line-height: 1.1; /* فاصله بین خطوط */
+        }
+       .feature-intro {
+            margin-top: 20px; /* فاصله از ویژگی‌های اصلی */
+            padding: 20px; /* فاصله */
+            border-radius: 10px; /* گرد کردن گوشه‌ها */
+            background: #2c2c2c; /* پس‌زمینه تیره برای معرفی ویژگی‌ها */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333; /* رنگ پس‌زمینه تیره برای فوتر */
+            color: white; /* رنگ متن فوتر سفید */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* فاصله از محتوا */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>سطل زباله هوشمند</h1>
+    </header>
+    <div class="container">
+        <div class="features">
+            <div class="features-text">
+                <h2>معرفی محصول</h2>
+                <p>سطل زباله هوشمند ما با تکنولوژی‌های پیشرفته طراحی شده است تا تجربه‌ای راحت و کارآمد برای مدیریت زباله‌ها فراهم کند.</p>
+
+                <!-- افزودن عکس app.png -->
+                <img src="app.png" alt="سطل زباله هوشمند" width="200" height="200" style="border-radius: 10px;">
+
+                <h2>ویژگی‌ها</h2>
+                <ul>
+                    <li>مجهز به سنسور آلتراسونیک جهت باز شدن خودکار درب به مدت 5 ثانیه</li>
+                    <li>مجهز به سنسور لمسی جهت باز نگه داشتن درب سطل برای مدت زمان دلخواه</li>
+                    <li>مجهز به سنسور نوری جهت تشخیص پر شدن زباله</li>
+                    <li>امکان کنترل درب سطل زباله و اطلاع از پر بودن سطل توسط گوشی</li>
+                </ul>
+
+                <div class="description">
+                    <p>این سطل زباله هوشمند با طراحی مدرن و قابلیت‌های پیشرفته، می‌تواند به شما در مدیریت بهتر زباله‌ها کمک کند. با استفاده از این محصول، شما می‌توانید به راحتی از پر شدن سطل جلوگیری کنید و از تکنولوژی‌های روز دنیا بهره‌مند شوید.</p>
+                </div>
+
+                <!-- بخش معرفی ویژگی‌ها -->
+                <div class="feature-intro">
+                    <h2>معرفی ویژگی‌ها</h2>
+
+                    <!-- افزودن عکس smart-bin.jpg -->
+                    <img src="smart-bin.jpg" alt="سطل زباله هوشمند" width="200" height="200" style="border-radius: 10px;">
+
+                    <div>
+                        <h3>سنسور آلتراسونیک</h3>
+                        <p>این سنسور به شما این امکان را می‌دهد که درب سطل زباله به طور خودکار باز شود و پس از 5 ثانیه بسته شود. این ویژگی باعث می‌شود که شما نیازی به لمس سطل نداشته باشید.</p>
+                    </div>
+                    <div>
+                        <h3>سنسور لمسی</h3>
+                        <p>با استفاده از سنسور لمسی، شما می‌توانید درب سطل را برای مدت زمان دلخواه باز نگه دارید. این ویژگی برای زمانی که نیاز دارید زباله‌ها را به سرعت دور بیندازید، بسیار مفید است.</p>
+                    </div>
+                    <div>
+                        <h3>سنسور نوری</h3>
+                        <p>این سنسور به شما کمک می‌کند تا پر شدن سطل زباله را تشخیص دهید و از پر بودن سطل مطلع شوید. این ویژگی به شما کمک می‌کند تا همیشه سطل را در وضعیت مناسب نگه دارید.</p>
+                    </div>
+                    <div>
+                        <h3>کنترل از طریق گوشی</h3>
+                        <p>شما می‌توانید از طریق گوشی هوشمند خود درب سطل زباله را کنترل کنید و از پر بودن سطل مطلع شوید. این ویژگی به شما امکان می‌دهد تا به راحتی مدیریت زباله‌های خود را انجام دهید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; همه حقوق محفوظ است.</p>
+    </footer>
+
+    <script>
+        // فعال‌سازی انیمیشن پس از بارگذاری کامل صفحه
+        window.onload = function() {
+            document.body.classList.add('loaded');
+        };
+    </script>
+</body>
+</html>
+		
