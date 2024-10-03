@@ -38,10 +38,23 @@
         .features {
             display: flex; /* استفاده از flexbox برای چینش افقی */
             flex-direction: column; /* چینش عمودی */
+            align-items: flex-start; /* تنظیم عناصر به سمت چپ */
         }
         .features-text {
             flex: 1; /* فضای بیشتری برای متن */
-            margin-left: 20px; /* فاصله از تصویر (که حذف شده) */
+            text-align: right; /* راست‌چین کردن متن */
+        }
+        .image-container {
+            display: flex; /* استفاده از flexbox برای چینش تصویر و متن */
+            align-items: center; /* تراز کردن عمودی تصویر و متن */
+            margin: 20px 0; /* فاصله از بالا و پایین */
+        }
+        .image-container img {
+            width: 150px; /* عرض تصویر */
+            height: 150px; /* ارتفاع تصویر */
+            border-radius: 50%; /* گرد کردن تصویر */
+            object-fit: cover; /* برش تصویر برای پر کردن فضای خالی */
+            margin-left: 10px; /* فاصله از متن */
         }
         h1, h2 {
             color: white; /* رنگ سفید برای تیتر اصلی */
@@ -98,7 +111,10 @@
 <div class="container">
     <div class="features">
         <div class="features-text">
-            <h2>معرفی محصول</h2>
+            <div class="image-container">
+                <img src="smart-bin.jpg" alt="Smart Bin" />
+                <h2>معرفی محصول</h2>
+            </div>
             <p>سطل زباله هوشمند ما با تکنولوژی‌های پیشرفته طراحی شده است تا تجربه‌ای راحت و کارآمد برای مدیریت زباله‌ها فراهم کند.</p>
 
             <h2>ویژگی‌ها</h2>
