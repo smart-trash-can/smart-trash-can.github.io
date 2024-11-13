@@ -7,71 +7,137 @@
 body{
     background-color: #2b2b2b;
 }
-header div.img{
-    width: 100%;
-    min-height: 40vh;
-    background-image: url(./img/1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width: 480px) {
+    .d2{
+        display: none;
+    }
+    .d1 header div.img{
+        width: 100%;
+        min-height: 40vh;
+        background-image: url(./img/1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .d1 .s{
+        display: flex;
+        flex-direction: row;
+    }
+    .d1 header div.img2{
+        display: flex;
+        position: relative;
+        width: 30vh;
+        height: 30vh;
+        margin-right:15%;
+        margin-top: -45%;
+        background-image: url(./img/smart-bin.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 4px solid #0064ff;
+    }
+    .d1 header h1{
+        margin-right: 5%;
+    }
+    .d1 main p{
+        padding-top: 3%;
+        padding-right: 3%;
+        font-size: 20px;
+    }
+    .d1 .v{
+        height: 120vh;
+        background-image: url(./img/2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .d1 .v h2{
+        font-size: 40px;
+        padding-top: 30px;
+        padding-right: 250px;
+    }
+    .d1 .v ul{
+        padding-top: 150px;
+    }
+    .d1 div.v ul li{
+        height: 30px;
+        margin: 30px;
+        padding-right: 30px;
+        color: #fff;
+        font-size: 30px;
+    }
+    .d1 .tv h1{
+        font-size: 30px;
+    }
+    .d1 .tv p{
+        font-size: 20px;
+        padding: 30px;
+    }
+    .d1 footer div{
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        background-color: #0064ff;
+        text-align: center;
+        border-radius: 10px;
+    }  
 }
-.s{
-    display: flex;
-    flex-direction: row;
-}
-header div.img2{
-    display: flex;
-    position: relative;
-    width: 30vh;
-    height: 30vh;
-    margin-right:15%;
-    margin-top: -45%;
-    background-image: url(./img/smart-bin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    border: 4px solid #0064ff;
-}
-header h1{
-    margin-right: 5%;
-}
-main p{
-    padding-top: 3%;
-    padding-right: 3%;
-    font-size: 20px;
-}
-.v{
-    height: 120vh;
-    background-image: url(./img/2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.v h2{
-    font-size: 40px;
-    padding-top: 30px;
-    padding-right: 250px;
-}
-.v ul{
-    padding-top: 150px;
-}
-div.v ul li{
-    height: 30px;
-    margin: 30px;
-    padding-right: 30px;
-    color: #fff;
-    font-size: 30px;
-}
-.tv h1{
-    font-size: 30px;
-}
-.tv p{
-    font-size: 20px;
-    padding: 30px;
-}
-footer div{
-    width: 100%;
-    height: 30px;
-    font-size: 20px;
-    background-color: #0064ff;
-    text-align: center;
-    border-radius: 10px;
+@media screen and (max-width: 480px) {
+    .d1{
+        display: none;
+    }
+    .d2 header .c{
+        width: 100%;
+        height: 40vh;
+        background-color: #0064ff;
+        border-radius: 0px 0px 50% 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .d2 header .img{
+        margin-top: 20px;
+        width: 50vw;
+        height: 50vw;
+        background-image: url(./img/smart-bin.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 2px solid #2b2b2b;
+        align-self: center;
+    }
+    .d2 main p{
+        margin-top: 30px;
+        margin-right: 5px;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .d2 div.v{
+        margin: 3vw;
+        border-radius: 10px;
+        background-color: #3f3f3f;
+    }
+    .d2 div.v h2{
+        padding-top: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+    .d2 div.v ul li{
+        margin: 15px 10px 15px 0px;
+        font-size: 25px;
+        display: block;
+    }
+    .d2 main div.tv h1{
+        font-size: 30px;
+    }
+    .d2 main div.tv p{
+        margin-right: 10px;
+    }
+    .d2 footer{
+        background-color: #0064ff;
+        border-radius: 5px;
+    }
+    .d2 footer p{
+        font-size: 20px;
+        text-align: center;
+    }
 }
