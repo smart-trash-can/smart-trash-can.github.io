@@ -107,7 +107,7 @@ body{
     }
     .d2 main p{
         margin-top: 30px;
-        margin-right: 5px;
+        margin-right: 10px;
         font-size: 25px;
         margin-bottom: 40px;
     }
@@ -128,9 +128,10 @@ body{
     }
     .d2 main div.tv h1{
         font-size: 30px;
+        padding-right: 10px;
     }
     .d2 main div.tv p{
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .d2 footer{
         background-color: #0064ff;
